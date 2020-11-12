@@ -23,7 +23,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Zs-1R-alx">
                                 <rect key="frame" x="0.0" y="90" width="375" height="772"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Iby-rm-XgG">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Iby-rm-XgG">
                                     <size key="itemSize" width="209" height="226"/>
                                     <size key="headerReferenceSize" width="50" height="420"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
