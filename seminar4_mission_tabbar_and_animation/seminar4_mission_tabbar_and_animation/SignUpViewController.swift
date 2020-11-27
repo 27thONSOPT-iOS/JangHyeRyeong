@@ -25,6 +25,11 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
    
     @IBAction func touchUpSubmit(_ sender: Any) {
+        
+        if let loginVC = self.presentingViewController as? LoginViewController{
+            loginVC.part = self.partTextField.text
+        }
+        
         self.dismiss(animated: true, completion: nil)
     }
     

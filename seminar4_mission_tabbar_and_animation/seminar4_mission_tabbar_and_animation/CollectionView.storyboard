@@ -12,7 +12,7 @@
         <!--Item 1-->
         <scene sceneID="0Cm-qT-jam">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="IlK-FU-YU8" customClass="LoginViewController" customModule="seminar3_mission_collectionView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="IlK-FU-YU8" customClass="LoginViewController" customModule="seminar4_mission_tabbar_and_animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fBa-IW-17c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,6 +60,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="9uw-0q-zXd"/>
+                    <connections>
+                        <outlet property="partLabel" destination="1aM-kI-bC9" id="iVP-xc-JxK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTA-PL-vEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,7 +71,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="IEA-0m-3oU">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" modalPresentationStyle="fullScreen" id="dV7-CU-mLM" customClass="SignUpViewController" customModule="seminar3_mission_collectionView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" modalPresentationStyle="fullScreen" id="dV7-CU-mLM" customClass="SignUpViewController" customModule="seminar4_mission_tabbar_and_animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TN2-uH-aRb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +145,7 @@
         <!--Main Tab Bar Controller-->
         <scene sceneID="ofb-5v-p1o">
             <objects>
-                <tabBarController storyboardIdentifier="mainTabBarController" id="fso-cB-xsr" customClass="mainTabBarController" customModule="seminar3_mission_collectionView" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTabBarController" id="fso-cB-xsr" customClass="mainTabBarController" customModule="seminar4_mission_tabbar_and_animation" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4kR-C3-D18">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -157,7 +160,7 @@
         <!--Part Collection ViewVC-->
         <scene sceneID="GwB-ds-4VK">
             <objects>
-                <viewController storyboardIdentifier="PartCollectionViewVC" id="F2k-J2-5I3" customClass="PartCollectionViewVC" customModule="seminar3_mission_collectionView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PartCollectionViewVC" id="F2k-J2-5I3" customClass="PartCollectionViewVC" customModule="seminar4_mission_tabbar_and_animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Oc-y0-A0t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,10 +178,10 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PartIntroCell" reuseIdentifier="PartIntroCell" id="y3L-SF-SCP" customClass="PartIntroCell" customModule="seminar3_mission_collectionView" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PartIntroCell" reuseIdentifier="PartIntroCell" id="y3L-SF-SCP" customClass="PartIntroCell" customModule="seminar4_mission_tabbar_and_animation" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="420" width="150" height="225"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CYc-R0-rgC" customClass="PartIntroCell" customModule="seminar3_mission_collectionView" customModuleProvider="target">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CYc-R0-rgC" customClass="PartIntroCell" customModule="seminar4_mission_tabbar_and_animation" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="225"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -228,7 +231,7 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeaderViewCell" id="bMY-2D-mS8" customClass="HeaderViewCell" customModule="seminar3_mission_collectionView" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeaderViewCell" id="bMY-2D-mS8" customClass="HeaderViewCell" customModule="seminar4_mission_tabbar_and_animation" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
